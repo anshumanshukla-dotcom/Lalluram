@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Search Results{% endblock title %}
+{% block body %}
+<div class="container min-vh-100">
+    <h2 class="my-3 mx-3">Search results:</h2>
+    <p class="my-3 mx-3">Your search - <b>{{query}}</b> - did not match any documents.</p><br>
+    <h5 class="mx-3 mb-3"><u>
+            Suggestions:</u></h5>
+    <ul>
+        <li class="mx-3">Make sure that all words are spelled correctly.</li>
+        <li class="mx-3">Try different keywords.</li>
+        <li class="mx-3">Try more general keywords.</li>
+        <li class="mx-3">Try fewer keywords.</li>
+    </ul>
+</div>
+{% endblock body %}
